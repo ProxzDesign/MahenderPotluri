@@ -1,0 +1,306 @@
+.ServiceSection {
+    background: var(--background);
+    padding-top: 6rem;
+
+    .sectionWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        .sectionTitle {
+            color: var(--foreground);
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1em;
+
+            span {
+                color: #7e7e81;
+            }
+        }
+
+        .meeting-content {
+            display: flex;
+            align-items: space-between;
+            justify-content: flex-start;
+            gap: 6rem;
+
+            .meeting-details-wrap {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                .meeting-card {
+                    grid-column-gap: 16px;
+                    grid-row-gap: 16px;
+                    background-color: #242424;
+                    border-bottom: 1px solid #3a3a3a;
+                    grid-template-rows: auto auto;
+                    grid-template-columns: 1fr 1fr;
+                    grid-auto-columns: 1fr;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 2em;
+                    display: flex;
+                    color: var(--foreground);
+
+                    .count {
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        color: #7e7e81;
+                    }
+
+                    .meeting-card-title {
+                        font-size: 2rem;
+                        font-weight: 700;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .meeting-review {
+                gap: 1.25rem;
+                flex-flow: column;
+                justify-content: center;
+                align-items: flex-start;
+                max-width: 24.125rem;
+                display: flex;
+
+                .Review {
+                    font-size: 1.5rem;
+                    line-height: 1.5em;
+                    color: var(--foreground);
+                }
+
+                .ReviewFounder {
+                    display: flex;
+                    color: var(--foreground);
+                    gap: 0.75rem;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    img {
+                        flex: none;
+                        width: 2.75rem;
+                        height: 2.75rem;
+                    }
+
+                    .Founder-Data {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 0.25rem;
+
+                        .founderName {
+                            font-size: 1.25rem;
+                            font-weight: 700;
+                        }
+
+                        .founderDesignation {
+                            font-size: 1rem;
+                            color: #7e7e81;
+                        }
+                    }
+                }
+
+                .btn-primary:after {
+                    background: var(--foreground);
+                }
+
+                .greenBtn {
+                    --btn-Color: var(--greenColor);
+                    color: var(--background);
+
+                    .icon-wrap {
+                        color: var(--background);
+                    }
+                }
+            }
+        }
+    }
+
+    .serviceCards {
+        padding-top: 10rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .sectionTitle {
+            color: var(--foreground);
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1em;
+            margin-block: 4rem;
+
+            span {
+                color: #7e7e81;
+            }
+        }
+
+        .service-card {
+            display: flex;
+            justify-content: flex-start;
+            padding: 3.5rem;
+            position: sticky;
+            top: 0;
+
+            .serviceWrapper {
+                gap: 9rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: var(--foreground);
+
+                .serviceDetail {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    .serviceTitle {
+                        font-size: 3rem;
+                        font-weight: 800;
+                    }
+
+                    .serviceData {
+                        display: flex;
+                        gap: 2rem;
+                        align-items: flex-start;
+
+                        .serviceOverview {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.5rem;
+
+                            .serviceDescription {
+                                font-size: 1rem;
+                                line-height: 1.5em;
+                                max-width: 23.75rem;
+                            }
+
+                            .contactBtn {
+                                .btn-primary {
+                                    width: fit-content;
+                                    color: var(--background);
+
+                                    &:after {
+                                        background: var(--greenColor);
+                                    }
+
+                                    &.blackBtn {
+                                        color: var(--foreground);
+
+                                        &:after {
+                                            background: var(--blueColor);
+                                        }
+                                    }
+                                }
+
+                                .whiteBtn:before {
+                                    --btn-Color: var(--foreground);
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    aspect-ratio: 1;
+                                    border-radius: 10000px;
+                                    background: var(--btn-Color);
+                                    opacity: 1;
+                                    transition: all 0.3s ease;
+                                    z-index: -1;
+                                }
+
+                                .blackBtn:before {
+                                    --btn-Color: var(--background);
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    aspect-ratio: 1;
+                                    border-radius: 10000px;
+                                    background: var(--btn-Color);
+                                    opacity: 1;
+                                    transition: all 0.3s ease;
+                                    z-index: -1;
+                                }
+                            }
+                        }
+
+                        .serviceList {
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+                                list-style-type: none;
+                                padding: 0;
+                                margin: 0;
+
+                                li {
+                                    font-size: 1rem;
+                                    line-height: 1.5em;
+                                    white-space: nowrap;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .serviceImage{
+                    flex: none;
+                    max-width: 385px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 0.5rem;
+                    }
+                    
+                }
+            }
+        }
+
+        .blueCard {
+            background: #3f2fee;
+
+            .serviceWrapper {
+                color: var(--foreground);
+            }
+        }
+
+        .whiteCard {
+            background: var(--foreground);
+
+            .serviceWrapper {
+                color: var(--background);
+            }
+        }
+
+        .yellowCard {
+            background: #ffd500;
+
+            .serviceWrapper {
+                color: var(--background);
+            }
+        }
+
+        .redCard {
+            background: #ff531a;
+
+            .serviceWrapper {
+                color: var(--foreground);
+            }
+        }
+
+        .blackCard {
+            background: #000000;
+
+            .serviceWrapper {
+                color: var(--foreground);
+            }
+        }
+    }
+}

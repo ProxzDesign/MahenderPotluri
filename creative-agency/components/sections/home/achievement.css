@@ -1,0 +1,85 @@
+.Achievement{
+    background-image: url(../../../public/achievement-bg.webp);
+    padding : 8rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: hue-rotate(325deg);
+    overflow-x: hidden;
+
+    .sectionWrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+
+        .titleContainer{
+            /* overflow: hidden; */
+            
+            h2{
+                color: #fff;  
+                letter-spacing: 1px;
+                font-size: 10em;
+                font-weight: 700;
+                line-height: 1.11;  
+            }
+
+            .fromLeft{
+                padding-right: 10rem;
+            }
+            .fromRight{
+                padding-left: 10rem;
+            }
+        }
+        .achievementCards{
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+
+            .card{
+                background: var(--foreground);
+                padding:2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 10rem;
+                justify-content: space-between;
+                width: 100%;
+                border-right: 1px solid #e0e0e0;
+                overflow: hidden;
+
+                &:nth-last-child(1){
+                    border-right: none;
+                }
+
+                .labelContainer{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .arrowIcon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 9in;
+                        background: #3f2fee;
+                        height: 3rem;
+                        width: 3rem;
+                        transform: translateY(-100px);
+                        transition: all 0.3s ease;
+                    }
+                }
+                .cardTitle{
+                    font-size: 2rem;
+                    font-weight: 600;
+                    line-height: 1.25;
+                }
+
+                &:hover{
+                    .arrowIcon{
+                        transform: translateY(0px);
+                    }
+                }
+            }
+        }
+        
+    }
+}

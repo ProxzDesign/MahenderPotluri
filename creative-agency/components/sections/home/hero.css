@@ -1,0 +1,196 @@
+.heroSection{
+    padding-top: 180px;
+
+    .heroContent{
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        display: flex;
+
+        .heroTitle-wrapper{
+            opacity: 1;
+            flex: none;
+            order: 0;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            max-width: 55rem;
+
+            .heroDot-container{
+                display: flex;
+                gap: 4px;
+                padding: 4px 12px 4px 4px;
+                border-radius: 9in;
+                background: var(--foreground);
+                box-shadow: 0 1px 15px #0000000d;
+                width: fit-content;
+                align-items: center;
+
+                .heroDot{
+                    height: 24px;
+                    width: 24px;
+                    display: flex;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+
+                    .smallDot{
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 9in;
+                        background: var(--greenColor);
+                    }
+
+                    .largeDot{
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 9in;
+                        background: var(--greenColor);
+                        animation: Pulse 2s linear infinite;
+                        position: absolute;
+                    }
+                }
+            }
+
+            .heroTitle-Container{
+                letter-spacing: 1px;
+                width: 100%;
+                font-size: 2.5rem;
+                line-height: 1;
+
+                .heroSpan{
+                    display: none;
+                }
+            }
+            .textAnimation{
+                display: flex;
+                gap: 1rem;
+                font-size: 2.5rem;
+                font-weight: 700;
+                height: 88px;
+                overflow-y: hidden;
+                margin-top: -1rem;
+                
+                .heroHeadingSpan,.gradient-Text{
+                    font-size: 2em;
+                }
+
+                .heroHeadingSpan{
+                    margin-top: 0.5rem;
+                }
+                .heroTextAnimation-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    padding-block: 0.5rem;
+
+                    .textAnimation-text{
+                        padding-block: 0.5rem;
+                        background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+                        background-clip: text;
+                        color: transparent;
+                    }
+                }
+            }
+        }
+
+        .heroDescription{
+            gap: 1.25rem;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 20.7rem;
+            display: flex;
+            line-height: 1.5;
+            font-size: 1.2rem;
+            font-weight: 500;
+
+            .rating{
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+                
+                .founderList{
+                    gap: 1.5rem;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    position: relative;
+
+                    .founderFaces{
+                        display: flex;
+                        gap: -1rem;
+
+                        .userImage{
+                            height: 2.25rem;
+                            width: 2.25rem;
+                            border-radius: 9in;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 2px solid var(--foreground);
+                            object-fit: cover;margin-right: -.85rem;
+
+                            img{
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 9in;
+                            }
+                
+                        }
+                    }
+                    .reviewText{
+                        color: #3a3a3a;
+                        font-size: .65rem;
+                        font-weight: 700;
+                        line-height: 1.4;
+                    }
+                }
+                .clutchRating{
+                    cursor: pointer;
+                    flex: none;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 9.125rem;
+                    height: 3.75rem;
+                    margin-bottom: 0;
+                    display: flex;
+                    overflow: clip;
+
+                    img{
+                        height: 150%;
+                        width: 150%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+
+    .heroCTA{
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.625rem;
+        display: flex;
+
+        .ctaWrap{
+            gap: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@keyframes Pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
