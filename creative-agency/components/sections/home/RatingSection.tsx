@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./ratingSection.css";
 
-const TOTAL_SLIDES = 6;
+const TOTAL_SLIDES = 7;
 
 export default function RatingSection() {
   const [current, setCurrent] = useState(0); // 0..8
@@ -99,13 +99,105 @@ export default function RatingSection() {
                     </div>
                 </div>
               </div>
-              <div className="slide">03</div>
-              <div className="slide">04</div>
-              <div className="slide">05</div>
-              <div className="slide">06</div>
-              <div className="slide">07</div>
-              <div className="slide">08</div>
-              <div className="slide">09</div>
+              <div className="slide">
+                <p className="companyName">tournated</p>
+                <div className="companyWords">
+                    <p className="ratingText">
+                        <span>“Highly happy</span> with a design delivered by Creative Agency. <span>Definitely will keep working</span> Great and quality smooth communication.”</p>
+                </div>
+                <div className="ratingUser">
+                    <img src="Rating-Founder02.avif" alt="Comapny Owner" />
+                    <div className="UserDetails">
+                        <p className="name">Nick Fisher</p>
+                        <p className="designation">CEO</p>
+                    </div>
+                </div>
+              </div>
+              <div className="slide">
+                <p className="companyName">ActiveSync</p>
+                <div className="companyWords">
+                    <p className="ratingText">
+                        “Creative Agency brought my <span>idea to life.</span>  Taken great care of my business & implement <span>best user experience</span> possible”</p>
+                </div>
+                <div className="ratingUser">
+                    <img src="Rating-Founder03.avif" alt="Comapny Owner" />
+                    <div className="UserDetails">
+                        <p className="name">Abraham Ajayi </p>
+                        <p className="designation">CEO</p>
+                    </div>
+                </div>
+              </div>
+              <div className="slide">
+                <p className="companyName">Luxara</p>
+                <div className="companyWords">
+                    <p className="ratingText">
+                        “Very professional, <span> top notch communication</span> & absolute pleasure to work. Super satisfied with results. <span>Highly recommended!”</span></p>
+                </div>
+                <div className="ratingUser">
+                    <img src="Rating-Founder04.webp" alt="Comapny Owner" />
+                    <div className="UserDetails">
+                        <p className="name">Danny P</p>
+                        <p className="designation">Director of Sales</p>
+                    </div>
+                </div>
+              </div>
+              <div className="slide">
+                <p className="companyName">HBIT App</p>
+                <div className="companyWords">
+                    <p className="ratingText">
+                        “Creative Agency delivered a <span>stunning</span> and professional mobile UI design quickly. Highly recommend their <span>excellent work!”</span></p>
+                </div>
+                <div className="ratingUser">
+                    <img src="Rating-Founder05.webp" alt="Comapny Owner" />
+                    <div className="UserDetails">
+                        <p className="name">Mark Gawlyk</p>
+                        <p className="designation">Co-founder & CTO</p>
+                    </div>
+                </div>
+              </div>
+              <div className="slide">
+                <p className="companyName">Augalo</p>
+                <div className="companyWords">
+                    <p className="ratingText">
+                        “Creative Agency <span>satisfied</span> me from the very first order. I able to call on him again & the result as <span>brilliant</span> as ever.”</p>
+                </div>
+                <div className="ratingUser">
+                    <img src="Rating-Founder06.webp" alt="Comapny Owner" />
+                    <div className="UserDetails">
+                        <p className="name">Camille</p>
+                        <p className="designation">CEO & Founder</p>
+                    </div>
+                </div>
+              </div>
+              <div className="slide">
+                <p className="companyName">LifeTales</p>
+                <div className="companyWords">
+                    <p className="ratingText">
+                        “Creative Agency is a fantastic design team, with a <span>healthy blend of UI and UX skills</span>. Highly recommended.”</p>
+                </div>
+                <div className="ratingUser">
+                    <img src="Rating-Founder06.webp" alt="Comapny Owner" />
+                    <div className="UserDetails">
+                        <p className="name">Matt Kabus</p>
+                        <p className="designation">CEO & Founder</p>
+                    </div>
+                </div>
+              </div>
+              <div className="slide">
+                <p className="companyName">Krispy</p>
+                <div className="companyWords">
+                    <p className="ratingText">
+                        “Super awesome design team, <span>I came back again</span> because how satisfied I was last time. <span>As usual, great”</span></p>
+                </div>
+                <div className="ratingUser">
+                    <img src="Rating-Founder06.webp" alt="Comapny Owner" />
+                    <div className="UserDetails">
+                        <p className="name">Shah Taj</p>
+                        <p className="designation">CEO</p>
+                    </div>
+                </div>
+              </div>
+              
             </div>
           </div>
 

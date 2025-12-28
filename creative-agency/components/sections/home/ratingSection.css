@@ -1,6 +1,7 @@
 .RatingSection {
     background: #F0F0F0;
     padding-block: 9rem;
+    overflow-x: clip;
 
     .sectionWrapper {
         display: flex;
@@ -148,27 +149,31 @@
             }
 
 
-            .sliderDots {
-                display: flex;
-                gap: 0.5rem;
-                justify-content: center;
-                margin-top: 1.5rem;
+        }
+        .sliderDots {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5rem;
 
-                .sliderDot {
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 999px;
-                    background: #444;
-                    opacity: 0.4;
-                    cursor: pointer;
-                    transition: opacity 0.2s ease, transform 0.2s ease, width 0.2s ease;
+            .sliderDot {
+                width: 12px;
+                height: 12px;
+                aspect-ratio: 1;
+                border-radius: 999px;
+                background: #444;
+                opacity: 0.4;
+                cursor: pointer;
+                transition: opacity 0.2s ease, transform 0.2s ease, width 0.2s ease;
+                border: none;
+                padding: 0;
 
-                    &.is-active {
-                        opacity: 1;
-                        width: 18px;
-                        transform: scale(1.1);
-                        background: #fff;
-                    }
+                &.is-active {
+                    opacity: 1;
+                    width: 12px;
+                    transform: scale(1.1);
+                    background: var(--background);
                 }
             }
         }
