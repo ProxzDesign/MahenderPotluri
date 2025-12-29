@@ -9,20 +9,55 @@ import NoiseOverlay from "@/components/layout/NoiseOverlay";
 
 const ProxzFont = localFont({
   src: [
-    { path: "../assets/fonts/ProxzFont-ExtraThin.otf", weight: "100", style: "normal" },
-    { path: "../assets/fonts/ProxzFont-Thin.otf", weight: "200", style: "normal" },
-    { path: "../assets/fonts/ProxzFont-Extra Light.otf", weight: "300", style: "normal" },
-    { path: "../assets/fonts/ProxzFont-Light.otf", weight: "400", style: "normal" },
-    { path: "../assets/fonts/ProxzFont-Regular.otf", weight: "500", style: "normal" },
-    { path: "../assets/fonts/ProxzFont-Medium.otf",  weight: "600", style: "normal" },
-    { path: "../assets/fonts/ProxzFont-Semibold.otf",  weight: "700", style: "normal" },
-    { path: "../assets/fonts/ProxzFont-Bold.otf",    weight: "800", style: "normal" },
-    { path: "../assets/fonts/ProxzFont-Extrabold.otf",    weight: "900", style: "normal" },
+    {
+      path: "../assets/fonts/ProxzFont_ExtraThin.otf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/ProxzFont_Thin.otf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/ProxzFont_ExtraLight.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/ProxzFont_Light.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/ProxzFont_Regular.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/ProxzFont_Medium.otf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/ProxzFont_Semibold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/ProxzFont_Bold.otf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/ProxzFont_Extrabold.otf",
+      weight: "900",
+      style: "normal",
+    },
   ],
   variable: "--font-proxz",
   display: "swap",
 });
-
 
 export const metadata = {
   title: "Mahender Creative Studio",
@@ -30,14 +65,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-
   return (
     <html lang="en" className={ProxzFont.variable}>
       <body>
-        <NoiseOverlay /> 
+        <NoiseOverlay />
         <ButtonAnimProvider>
           <Header />
-           <main>{children}</main>
+          <main>{children}</main>
           <Footer />
         </ButtonAnimProvider>
       </body>
