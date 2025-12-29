@@ -10,47 +10,47 @@ import NoiseOverlay from "@/components/layout/NoiseOverlay";
 const ProxzFont = localFont({
   src: [
     {
-      path: "../assets/fonts/ProxzFont_ExtraThin.otf",
+      path: "./assets/fonts/ProxzFont_ExtraThin.otf",
       weight: "100",
       style: "normal",
     },
     {
-      path: "../assets/fonts/ProxzFont_Thin.otf",
+      path: "./assets/fonts/ProxzFont_Thin.otf",
       weight: "200",
       style: "normal",
     },
     {
-      path: "../assets/fonts/ProxzFont_ExtraLight.otf",
+      path: "./assets/fonts/ProxzFont_ExtraLight.otf",
       weight: "300",
       style: "normal",
     },
     {
-      path: "../assets/fonts/ProxzFont_Light.otf",
+      path: "./assets/fonts/ProxzFont_Light.otf",
       weight: "400",
       style: "normal",
     },
     {
-      path: "../assets/fonts/ProxzFont_Regular.otf",
+      path: "./assets/fonts/ProxzFont_Regular.otf",
       weight: "500",
       style: "normal",
     },
     {
-      path: "../assets/fonts/ProxzFont_Medium.otf",
+      path: "./assets/fonts/ProxzFont_Medium.otf",
       weight: "600",
       style: "normal",
     },
     {
-      path: "../assets/fonts/ProxzFont_Semibold.otf",
+      path: "./assets/fonts/ProxzFont_Semibold.otf",
       weight: "700",
       style: "normal",
     },
     {
-      path: "../assets/fonts/ProxzFont_Bold.otf",
+      path: "./assets/fonts/ProxzFont_Bold.otf",
       weight: "800",
       style: "normal",
     },
     {
-      path: "../assets/fonts/ProxzFont_Extrabold.otf",
+      path: "./assets/fonts/ProxzFont_Extrabold.otf",
       weight: "900",
       style: "normal",
     },
